@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+    <name>PLG_SYSTEM_GOOGLEOPTIMIZER</name>
+    <author>Yireo</author>
+    <creationDate>February 2013</creationDate>
+	<copyright>Copyright (C) 2013 Yireo.com. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+    <authorEmail>development@yireo.com</authorEmail>
+    <authorUrl>http://www.yireo.com/</authorUrl>
+    <version>0.3.2</version>
+    <description>PLG_SYSTEM_GOOGLEOPTIMIZER_DESC</description>
+    
+    <files>
+        <filename plugin="googleoptimizer">googleoptimizer.php</filename>
+        <folder>tmpl</folder>
+    </files>
+
+    <languages>
+        <language tag="en-GB">en-GB.plg_system_googleoptimizer.ini</language>
+    </languages>
+    
+    <config>
+	    <fields name="params">
+            <fieldset name="basic">
+                <field name="google_account_id" type="text" default="UA-xyz-1" label="PLG_SYSTEM_GOOGLEOPTIMIZER_FIELD_GOOGLE_ACCOUNT_ID" description="PLG_SYSTEM_GOOGLEOPTIMIZER_FIELD_GOOGLE_ACCOUNT_ID_DESC" />
+                <field name="google_experiment_id" type="text" default="" label="PLG_SYSTEM_GOOGLEOPTIMIZER_FIELD_GOOGLE_EXPERIMENT_ID" description="PLG_SYSTEM_GOOGLEOPTIMIZER_FIELD_GOOGLE_EXPERIMENT_ID_DESC" />
+
+                <field name="remove_tags" type="list" default="0" label="PLG_SYSTEM_GOOGLEOPTIMIZER_FIELD_REMOVE_TAGS" description="PLG_SYSTEM_GOOGLEOPTIMIZER_FIELD_REMOVE_TAGS_DESC">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="html_type" type="list" default="xhtml" label="PLG_SYSTEM_GOOGLEOPTIMIZER_FIELD_HTML_TYPE" description="PLG_SYSTEM_GOOGLEOPTIMIZER_FIELD_HTML_TYPE_DESC">
+                    <option value="xhtml">XHTML 1.0</option>
+                    <option value="html5">HTML 5</option>
+                </field>
+	        </fieldset>
+        </fields>
+    </config>
+	<updateservers>
+		<server type="extension" priority="1" name="plg_system_googleoptimizer">http://www.yireo.com/updates/plg__sytem_googleoptimizer.xml</server>
+	</updateservers>
+</extension>
