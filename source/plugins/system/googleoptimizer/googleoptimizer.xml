@@ -37,6 +37,6 @@
         </fields>
     </config>
 	<updateservers>
-		<server type="extension" priority="1" name="plg_system_googleoptimizer">http://www.yireo.com/updates/plg__sytem_googleoptimizer.xml</server>
+		<server type="extension" priority="1" name="plg_system_googleoptimizer">https://www.yireo.com/updates/plg__sytem_googleoptimizer.xml</server>
 	</updateservers>
 </extension>
